@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="130dp"
+    android:layout_height="130dp"
+    android:layout_centerInParent="true"
+    app:cardCornerRadius="100dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/baseline_support_agent_24"
+        android:padding="20dp"/>
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scheduletime"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+         android:layout_centerVertical="true"
+
+        android:layout_marginStart="55dp"
+        app:cardCornerRadius="110dp">
+        <ImageView
+
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/baseline_add_alarm_24"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/learn"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginStart="95dp"
+        app:cardCornerRadius="110dp" >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/baseline_aspect_ratio_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/master"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginEnd="65dp"
+
+        app:cardCornerRadius="110dp" >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="7dp"
+            android:src="@drawable/baseline_school_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chat"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="295dp"
+
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="110dp" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/baseline_chat_24"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/gotoschedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="500dp"
+        android:text="@string/Start"
+
+        android:textAlignment="center" />
+
+
+</RelativeLayout>

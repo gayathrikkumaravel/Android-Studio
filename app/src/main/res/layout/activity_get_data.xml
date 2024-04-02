@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetData">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:layout_centerInParent="true"
+
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+            tools:ignore="ScrollViewCount">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/AddTask"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Title"
+                    android:padding="16dp"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/blue"></EditText>
+
+                <EditText
+                    android:id="@+id/Description"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:gravity="start|center_vertical"
+                    android:hint="Description"
+                    android:padding="16dp"
+                    android:inputType="textCapWords"
+
+                    android:textColor="@color/blue"></EditText>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20sp"
+                    android:text="@string/StartingTime"
+                    android:textSize="18sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    >
+                    <TextView
+                    android:id="@+id/Cchoosetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Selecttime"
+                    android:textSize="15sp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="30dp"
+                    android:textAlignment="center"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="10dp"
+                    >
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/settime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/baseline_add_24"
+                        />
+
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/canceltime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/baseline_delete_24"
+                        />
+
+
+                </LinearLayout>
+                </RelativeLayout>
+
+
+
+
+                <Button
+                    android:id="@+id/savedata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:text="@string/Add"
+                    android:textSize="15sp"
+                    app:cornerRadius="20dp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="90dp"
+        app:cardCornerRadius="100dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_add_task_24"
+            android:padding="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

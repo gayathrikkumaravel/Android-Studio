@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1001841378291",
+    "project_id": "schedule-2a2f3",
+    "storage_bucket": "schedule-2a2f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1001841378291:android:ce39f5e1dec6e7bb140886",
+        "android_client_info": {
+          "package_name": "com.gayuu.project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2mRtzZigrof6ZZf3Yyn2gzZL6Pj_VVqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
